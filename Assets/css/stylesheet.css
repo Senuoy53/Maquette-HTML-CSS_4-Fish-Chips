@@ -1,0 +1,278 @@
+/* +++++++++++++++++++++++++ Config General +++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Google font  */
+    /* For titles & nav */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+    /* For textes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');    
+
+/* Color Variables */
+:root {
+    --bg-color: #6CCAC2;
+    --bg-bleu-color: #25B3B4;
+    --border-color: #009A9B;
+    --lightBlack: #43454A;
+    --light-bleu: #009799;
+    --white: #fff;
+    --main-bg-color: #ABE1DB;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: var(--lightBlack);
+}
+
+html {
+    background-image: url("../imgs/fond.png");
+}
+
+/* body {
+    min-width: 800px;
+    max-width: 1100px;
+} */
+
+
+.firstSection {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.sizeWidth {
+    min-width: 800px;
+    max-width: 1100px;
+}
+
+main, aside {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav, h1, h3 {
+    font-family: 'Slabo 27px', serif;
+}
+
+nav, h1 {
+    text-transform: capitalize;
+}
+
+
+
+
+/* +++++++++++++++++++++++++++ Main Style +++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ===================================
+               Header
+=====================================*/
+header {
+    
+    text-align: center;
+    background-color: var(--bg-bleu-color);
+    border-top: 3px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    margin-top: 60px;
+    height: 150px;
+    
+}
+
+header .logo img {
+    width: 200px;
+}
+
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 20px;
+    transition: all .3s linear;
+}
+
+header nav a:hover {
+    color: var(--lightBlack);
+    font-weight: bolder;
+}
+
+/* ===================================
+               FirstSection
+=====================================*/
+.firstSection {
+    text-align: center;
+}
+
+.firstSection h1 {
+    font-size: 2.5em;
+    
+}
+
+
+/* ===================================
+               Mainsection
+=====================================*/
+main .mainSection {
+    display: inline-block;
+    width: 70%;
+    background-color: var(--main-bg-color);
+    padding-bottom: 50px;
+}
+
+main .mainSection article p {
+
+    line-height: 2em;
+}
+
+.mainSection > h1 {
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+.mainSection span {
+    font-family: 'Slabo 27px', serif;
+    color: var(--light-bleu) ;
+    
+}
+
+.mainSection article h1{
+
+    font-size: 1.8em;
+}
+
+.mainSection article i{
+
+    color: var(--light-bleu);
+    font-size: .8em;
+    margin: 0 5px;
+    
+}
+
+.mainSection article img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+.mainSection article button {
+    color: var(--white);
+    border: none;
+    background-color: var(--border-color) ;
+    padding: 10px 10px;
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+    transition: all .2s linear;
+    
+}
+
+.mainSection article button:hover, .mainSection article button:hover i  {
+    color: var(--border-color);
+    background-color: var(--lightBlack);
+    font-weight: bold;
+    
+}
+
+
+.mainSection article button i {
+    color: var(--white);
+    font-size: 1em;
+    transition: all .2s linear;
+}
+
+.mainSection #article-1 {
+    display: inline-block;
+    width: 42%;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.mainSection article h1 {
+        text-align: center;
+        font-weight: lighter;
+}
+
+.mainSection #article-2 {
+    display: inline-block;
+    width: 42%;
+    margin-right: 20px;
+    margin-left: 60px;
+    /* float: right; */
+}
+
+
+
+
+/* ===================================
+               Aside
+=====================================*/
+main aside {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    background-color: var(--bg-bleu-color);
+    border: 3px solid var(--border-color);
+    margin-left: 1%;
+    position: relative;
+    padding: 10px 20px 20px;
+}
+
+main aside img {
+    position: absolute;
+    width: 50%;
+    top: -50px;
+    right: -30px;
+}
+
+main aside h3 {
+    font-size: 1.4em;
+    color: var(--white);
+    font-weight: 400;
+}
+
+main aside h3 span  {
+    font-family: 'Slabo 27px', serif;
+    color: var(--main-bg-color);
+}
+
+main aside article h5 {
+    margin-top: -10px;
+}
+
+main aside article p {
+    color: var(--white);
+    font-weight: 500;
+    line-height: 2em;
+    margin-top: -20px;
+}
+
+main aside article h5, main aside article h5 i  {
+    color: var(--main-bg-color);
+}
+
+
+
+
+
+/* ===================================
+               Footer
+=====================================*/
+footer {
+    width: 85%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer p a {
+    color: blue;
+}
+
+
+
+
+
